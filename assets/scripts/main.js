@@ -88,9 +88,9 @@ function initFormHandler() {
   // B6. TODO - Create a new <recipe-card> element
   document.createElement('recipe-card');
   // B7. TODO - Add the recipeObject data to <recipe-card> using element.data
-  form.setAttribute('recipe-card', recipeObject.data);
+  recipeCard.data = recipeObject;
   // B8. TODO - Append this new <recipe-card> to <main>
-  main.appendChild(document.getElementsByTagName('recipe-card')[0]);
+  main.appendChild(recipeCard);
   // B9. TODO - Get the recipes array from localStorage, add this new recipe to it, and
   //            then save the recipes array back to localStorage
   let recipes = getRecipesFromStorage();
